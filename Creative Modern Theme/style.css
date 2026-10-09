@@ -43,12 +43,32 @@ body.background-black .ScrollSmoother-content {
 
 .footer-section .footer-widgets-wrapper {
     background-color: transparent !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.footer-section .shape-img {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    opacity: 0.22 !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+    max-width: 520px !important;
+}
+
+.footer-section .shape-img img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
 }
 
 .footer-section .footer-bottom {
     background-color: #080808 !important;
     background: #080808 !important;
     border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    position: relative !important;
+    z-index: 2 !important;
 }
 
 
