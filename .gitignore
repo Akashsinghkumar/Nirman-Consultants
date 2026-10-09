@@ -8,3 +8,5 @@ node_modules/
 .agent/
 .gemini/
 _removed_unused_backup/
+*backup*
+*unused*
