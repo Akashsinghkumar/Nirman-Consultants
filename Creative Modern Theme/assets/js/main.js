@@ -592,10 +592,18 @@
 	
 
     function loader() {
-        $(window).on('load', function() {
+        let isDismissed = false;
+        function dismissLoader() {
+            if (isDismissed) return;
+            isDismissed = true;
             $(".preloader").addClass('loaded');
-            $(".preloader").delay(600).fadeOut();
+            $(".preloader").fadeOut(400);
+        }
+        $(window).on('load', dismissLoader);
+        $(document).ready(function() {
+            setTimeout(dismissLoader, 600);
         });
+        setTimeout(dismissLoader, 1000);
     }
     loader();
 
