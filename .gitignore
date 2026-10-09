@@ -10,3 +10,4 @@ node_modules/
 _removed_unused_backup/
 *backup*
 *unused*
+*.zip
