@@ -29,12 +29,26 @@ body.background-black .ScrollSmoother-content {
     background-color: #0d0d0d !important;
 }
 
-.footer-section {
+.footer-section,
+.footer-section.footer-3,
+.footer-section.section-bg-2 {
+    background-color: #0d0d0d !important;
+    background: #0d0d0d !important;
     margin-top: auto !important;
     position: relative !important;
     z-index: 10 !important;
     clear: both !important;
     width: 100% !important;
+}
+
+.footer-section .footer-widgets-wrapper {
+    background-color: transparent !important;
+}
+
+.footer-section .footer-bottom {
+    background-color: #080808 !important;
+    background: #080808 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 
