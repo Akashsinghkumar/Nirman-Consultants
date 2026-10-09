@@ -355,30 +355,22 @@ body.background-black .ScrollSmoother-content {
 
 
 .contact-info-items {
-    background: #1c1c1c !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
-    transition: all 0.3s ease !important;
+    transition: all 0.3s ease;
     height: 100% !important;
 }
 
 .contact-info-items:hover {
     border-color: rgba(223, 169, 56, 0.4) !important;
-    transform: translateY(-3px) !important;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
-.contact-info-items a[href^="mailto:"],
-.contact-info-items .content a,
-.contact-info-items .content h6 a,
-.contact-info-items .content p a {
-    word-break: break-all !important;
-    overflow-wrap: anywhere !important;
-    font-size: 13px !important;
-    line-height: 1.5 !important;
-    display: inline-block !important;
-    max-width: 100% !important;
+.contact-info-items .content h6 a.link,
+.contact-info-items .content h6 a[href^="mailto:"] {
+    font-size: 12px !important;
+    white-space: nowrap !important;
+    letter-spacing: -0.2px !important;
+    display: block !important;
 }
 
 
