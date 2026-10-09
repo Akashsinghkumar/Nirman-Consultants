@@ -407,13 +407,17 @@ body.background-black .ScrollSmoother-content {
 }
 
 
+.contact-form-items .form-clt {
+    position: relative !important;
+}
+
 .contact-form-items .form-clt input,
 .contact-form-items .form-clt textarea {
     background: #1c1c1c !important;
     border: 1px solid rgba(255, 255, 255, 0.12) !important;
     color: #ffffff !important;
     font-size: 15px !important;
-    padding: 16px 20px !important;
+    padding: 16px 52px 16px 20px !important;
     border-radius: 6px !important;
     transition: all 0.3s ease;
     width: 100% !important;
@@ -430,6 +434,42 @@ body.background-black .ScrollSmoother-content {
 .contact-form-items .form-clt input::placeholder,
 .contact-form-items .form-clt textarea::placeholder {
     color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Consultation Form Icons - Gold Theme Color Matching Button */
+.contact-form-items .form-clt .icon,
+.contact-wrapper-2 .contact-form-items .form-clt .icon {
+    position: absolute !important;
+    top: 18px !important;
+    right: 22px !important;
+    color: var(--theme, #dfa938) !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    pointer-events: none !important;
+    z-index: 3 !important;
+    opacity: 0.95 !important;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+.contact-form-items .form-clt .icon i,
+.contact-wrapper-2 .contact-form-items .form-clt .icon i {
+    color: var(--theme, #dfa938) !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.contact-form-items .form-clt:focus-within .icon,
+.contact-wrapper-2 .contact-form-items .form-clt:focus-within .icon {
+    transform: scale(1.15) !important;
+}
+
+.contact-form-items .form-clt:focus-within .icon i,
+.contact-wrapper-2 .contact-form-items .form-clt:focus-within .icon i {
+    color: #ffffff !important;
+    text-shadow: 0 0 8px rgba(223, 169, 56, 0.8) !important;
 }
 
 
