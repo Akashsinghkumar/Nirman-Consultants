@@ -7,3 +7,4 @@ node_modules/
 *.tmp
 .agent/
 .gemini/
+_removed_unused_backup/
