@@ -965,24 +965,33 @@ body.background-black .ScrollSmoother-content {
 }
 
 .footer-phone-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 4px;
-    margin-top: 2px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 5px !important;
+    margin-top: 4px !important;
 }
 
 .footer-phone-link {
-    display: inline-block;
+    display: block !important;
     font-size: 13.5px !important;
     color: rgba(255, 255, 255, 0.8) !important;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: all 0.3s ease;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    transition: all 0.3s ease !important;
+}
+
+.footer-widgets-wrapper a[href^="tel:"],
+.single-footer-widget a[href^="tel:"],
+.footer-phone-link {
+    white-space: nowrap !important;
+    word-break: keep-all !important;
 }
 
 .footer-phone-link:hover {
     color: #dfa938 !important;
+    padding-left: 3px !important;
 }
 
 
