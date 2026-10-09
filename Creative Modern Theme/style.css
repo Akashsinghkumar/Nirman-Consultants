@@ -355,14 +355,30 @@ body.background-black .ScrollSmoother-content {
 
 
 .contact-info-items {
-    transition: all 0.3s ease;
+    background: #1c1c1c !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
     height: 100% !important;
 }
 
 .contact-info-items:hover {
     border-color: rgba(223, 169, 56, 0.4) !important;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+.contact-info-items a[href^="mailto:"],
+.contact-info-items .content a,
+.contact-info-items .content h6 a,
+.contact-info-items .content p a {
+    word-break: break-all !important;
+    overflow-wrap: anywhere !important;
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    display: inline-block !important;
+    max-width: 100% !important;
 }
 
 
@@ -406,6 +422,43 @@ body.background-black .ScrollSmoother-content {
     color: rgba(255, 255, 255, 0.7) !important;
 }
 
+
+/* Direct Consultation Section & Form Container (Border Type Style) */
+.contact-section.section-bg,
+.contact-section {
+    background-color: #0c0c0c !important;
+    background: #0c0c0c !important;
+    position: relative !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.contact-section .section-title h6 {
+    color: var(--theme, #dfa938) !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase !important;
+}
+
+.contact-section .section-title h2 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+.contact-wrapper-2 {
+    background: #151515 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 20px !important;
+    padding: 50px 45px !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+}
+
+@media (max-width: 767px) {
+    .contact-wrapper-2 {
+        padding: 30px 20px !important;
+    }
+}
 
 .contact-form-items .form-clt {
     position: relative !important;
