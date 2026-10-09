@@ -920,63 +920,119 @@ body:not(.background-black) .counter-section .section-title h2 {
     letter-spacing: 0.5px !important;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
     cursor: pointer !important;
+    white-space: nowrap !important;
 }
 
+.theme-btn i {
+    display: inline-block !important;
+    margin-left: 6px !important;
+    transition: transform 0.3s ease !important;
+}
 
-.background-black .theme-btn:not(.bg-white):not(.btn-call-action),
-.section-bg-2 .theme-btn:not(.bg-white):not(.btn-call-action),
-body.background-black .theme-btn:not(.bg-white):not(.btn-call-action),
-.hero-3 .theme-btn:not(.bg-white),
-.cta-banner-wrapper-3 .theme-btn:not(.bg-white),
-.service-section-3 .theme-btn:not(.bg-white),
-.testimonial-section-5 .theme-btn:not(.bg-white),
-.footer-section .theme-btn:not(.bg-white),
-.custom-dark-modal .theme-btn:not(.bg-white),
-.contact-section-4 .theme-btn:not(.bg-white),
-.about-section.background-black .theme-btn:not(.bg-white) {
+.theme-btn:hover i {
+    transform: translateX(4px) !important;
+}
+
+/* Base Theme Button: Gold Background with Opposite Dark Black Text */
+.theme-btn:not(.bg-white):not(.bg-transparent):not(.btn-call-action) {
     background-color: var(--theme, #dfa938) !important;
     color: #111111 !important;
     border: 1px solid var(--theme, #dfa938) !important;
 }
 
+.theme-btn:not(.bg-white):not(.bg-transparent):not(.btn-call-action) i {
+    color: #111111 !important;
+}
+
+/* Light Pages Hover: Button transitions to Obsidian Black with White Text */
+body:not(.background-black) .theme-btn:not(.bg-white):not(.bg-transparent):not(.btn-call-action):hover {
+    background-color: #111111 !important;
+    border-color: #111111 !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+    transform: translateY(-2px) !important;
+}
+
+body:not(.background-black) .theme-btn:not(.bg-white):not(.bg-transparent):not(.btn-call-action):hover i {
+    color: var(--theme, #dfa938) !important;
+}
+
+body:not(.background-black) .theme-btn:not(.bg-white):not(.bg-transparent)::before,
+body:not(.background-black) .theme-btn:not(.bg-white):not(.bg-transparent)::after {
+    background-color: #111111 !important;
+}
+
+/* Dark Backgrounds / Dark Cards: Button transitions to Crisp White on Hover with Dark Black Text */
+.background-black .theme-btn:not(.bg-white):not(.btn-call-action),
+.section-bg-2 .theme-btn:not(.bg-white):not(.btn-call-action),
+body.background-black .theme-btn:not(.bg-white):not(.btn-call-action),
+.hero-3 .theme-btn:not(.bg-white),
+.cta-banner-wrapper-3 .theme-btn:not(.bg-white),
+.cta-banner-wrapper-4 .theme-btn:not(.bg-white),
+.cta-banner-section-4 .theme-btn:not(.bg-white),
+.service-section-3 .theme-btn:not(.bg-white),
+.testimonial-section-5 .theme-btn:not(.bg-white),
+.footer-section .theme-btn:not(.bg-white),
+.custom-dark-modal .theme-btn:not(.bg-white),
+.contact-section-4 .theme-btn:not(.bg-white),
+.about-section.background-black .theme-btn:not(.bg-white),
+[style*="background: #141414"] .theme-btn,
+[style*="background:#141414"] .theme-btn,
+[style*="background: #181818"] .theme-btn {
+    background-color: var(--theme, #dfa938) !important;
+    color: #111111 !important;
+    border: 1px solid var(--theme, #dfa938) !important;
+}
 
 .background-black .theme-btn:not(.bg-white)::before,
 .background-black .theme-btn:not(.bg-white)::after,
 .section-bg-2 .theme-btn:not(.bg-white)::before,
 .section-bg-2 .theme-btn:not(.bg-white)::after,
-body.background-black .theme-btn:not(.bg-white)::before,
+body.background-black .theme-btn:not(.bg-white):before,
 body.background-black .theme-btn:not(.bg-white)::after,
 .hero-3 .theme-btn:not(.bg-white)::before,
 .hero-3 .theme-btn:not(.bg-white)::after,
 .cta-banner-wrapper-3 .theme-btn:not(.bg-white)::before,
-.cta-banner-wrapper-3 .theme-btn:not(.bg-white)::after,
+.cta-banner-wrapper-3 .theme-btn:not(.bg-white):after,
+.cta-banner-wrapper-4 .theme-btn:not(.bg-white)::before,
+.cta-banner-wrapper-4 .theme-btn:not(.bg-white)::after,
 .service-section-3 .theme-btn:not(.bg-white)::before,
-.service-section-3 .theme-btn:not(.bg-white)::after,
+.service-section-3 .theme-btn:not(.bg-white):after,
 .footer-section .theme-btn:not(.bg-white)::before,
-.footer-section .theme-btn:not(.bg-white)::after,
+.footer-section .theme-btn:not(.bg-white):after,
 .contact-section-4 .theme-btn:not(.bg-white)::before,
-.contact-section-4 .theme-btn:not(.bg-white)::after,
+.contact-section-4 .theme-btn:not(.bg-white):after,
 .about-section.background-black .theme-btn:not(.bg-white)::before,
-.about-section.background-black .theme-btn:not(.bg-white)::after {
+.about-section.background-black .theme-btn:not(.bg-white):after,
+[style*="background: #141414"] .theme-btn::before,
+[style*="background: #141414"] .theme-btn::after,
+[style*="background:#141414"] .theme-btn::before,
+[style*="background:#141414"] .theme-btn::after,
+[style*="background: #181818"] .theme-btn::before,
+[style*="background: #181818"] .theme-btn::after {
     background-color: #ffffff !important;
 }
-
 
 .background-black .theme-btn:not(.bg-white):hover,
 .section-bg-2 .theme-btn:not(.bg-white):hover,
 body.background-black .theme-btn:not(.bg-white):hover,
 .hero-3 .theme-btn:not(.bg-white):hover,
 .cta-banner-wrapper-3 .theme-btn:not(.bg-white):hover,
+.cta-banner-wrapper-4 .theme-btn:not(.bg-white):hover,
+.cta-banner-section-4 .theme-btn:not(.bg-white):hover,
 .service-section-3 .theme-btn:not(.bg-white):hover,
 .testimonial-section-5 .theme-btn:not(.bg-white):hover,
 .footer-section .theme-btn:not(.bg-white):hover,
 .custom-dark-modal .theme-btn:not(.bg-white):hover,
 .contact-section-4 .theme-btn:not(.bg-white):hover,
-.about-section.background-black .theme-btn:not(.bg-white):hover {
+.about-section.background-black .theme-btn:not(.bg-white):hover,
+[style*="background: #141414"] .theme-btn:hover,
+[style*="background:#141414"] .theme-btn:hover,
+[style*="background: #181818"] .theme-btn:hover {
     background-color: #ffffff !important;
     border-color: #ffffff !important;
     color: #111111 !important;
-    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3) !important;
     transform: translateY(-2px) !important;
 }
 
@@ -985,39 +1041,132 @@ body.background-black .theme-btn:not(.bg-white):hover,
 body.background-black .theme-btn:not(.bg-white):hover i,
 .hero-3 .theme-btn:not(.bg-white):hover i,
 .cta-banner-wrapper-3 .theme-btn:not(.bg-white):hover i,
+.cta-banner-wrapper-4 .theme-btn:not(.bg-white):hover i,
+.cta-banner-section-4 .theme-btn:not(.bg-white):hover i,
 .service-section-3 .theme-btn:not(.bg-white):hover i,
-.footer-section .theme-btn:not(.bg-white):hover i {
+.footer-section .theme-btn:not(.bg-white):hover i,
+[style*="background: #141414"] .theme-btn:hover i,
+[style*="background:#141414"] .theme-btn:hover i,
+[style*="background: #181818"] .theme-btn:hover i {
     color: #111111 !important;
 }
 
-
-.background-black .theme-btn.bg-white,
-.section-bg-2 .theme-btn.bg-white,
-body.background-black .theme-btn.bg-white,
-.cta-banner-wrapper-3 .theme-btn.bg-white {
+/* White Buttons: Default White with Black Text; Hover Obsidian Black with Pure White Text */
+.theme-btn.bg-white {
     background-color: #ffffff !important;
     color: #111111 !important;
     border: 1px solid #ffffff !important;
 }
 
-.background-black .theme-btn.bg-white::before,
-.background-black .theme-btn.bg-white::after,
-.section-bg-2 .theme-btn.bg-white::before,
-.section-bg-2 .theme-btn.bg-white::after,
-.cta-banner-wrapper-3 .theme-btn.bg-white::before,
-.cta-banner-wrapper-3 .theme-btn.bg-white::after {
-    background-color: var(--theme, #dfa938) !important;
+.theme-btn.bg-white i {
+    color: #111111 !important;
 }
 
-.background-black .theme-btn.bg-white:hover,
-.section-bg-2 .theme-btn.bg-white:hover,
-body.background-black .theme-btn.bg-white:hover,
-.cta-banner-wrapper-3 .theme-btn.bg-white:hover {
-    background-color: var(--theme, #dfa938) !important;
-    border-color: var(--theme, #dfa938) !important;
-    color: #111111 !important;
-    box-shadow: 0 8px 24px rgba(223, 169, 56, 0.4) !important;
+.theme-btn.bg-white::before,
+.theme-btn.bg-white::after {
+    background-color: #111111 !important;
+}
+
+.theme-btn.bg-white:hover {
+    background-color: #111111 !important;
+    border-color: #111111 !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
     transform: translateY(-2px) !important;
+}
+
+.theme-btn.bg-white:hover i {
+    color: var(--theme, #dfa938) !important;
+}
+
+/* CTA Banner Wrapper 2 (Gold Background): Button is White with Black Text, Hovers to Obsidian Black with White Text & Gold Arrow */
+.cta-banner-wrapper-2 .theme-btn,
+.cta-banner-section-2 .theme-btn {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    border: 1px solid #ffffff !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+}
+
+.cta-banner-wrapper-2 .theme-btn i,
+.cta-banner-section-2 .theme-btn i {
+    color: #111111 !important;
+}
+
+.cta-banner-wrapper-2 .theme-btn::before,
+.cta-banner-wrapper-2 .theme-btn::after,
+.cta-banner-section-2 .theme-btn::before,
+.cta-banner-section-2 .theme-btn::after {
+    background-color: #111111 !important;
+}
+
+.cta-banner-wrapper-2 .theme-btn:hover,
+.cta-banner-section-2 .theme-btn:hover {
+    background-color: #111111 !important;
+    border-color: #111111 !important;
+    color: #ffffff !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+    transform: translateY(-2px) !important;
+}
+
+.cta-banner-wrapper-2 .theme-btn:hover i,
+.cta-banner-section-2 .theme-btn:hover i {
+    color: var(--theme, #dfa938) !important;
+}
+
+/* CTA Banner Wrapper 4: Dark Architectural Engineering Card */
+.cta-banner-wrapper-4 {
+    background: linear-gradient(135deg, #181818 0%, #0d0d0d 100%) !important;
+    border: 1px solid rgba(223, 169, 56, 0.28) !important;
+    border-radius: 14px !important;
+    padding: 50px 40px !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.cta-banner-wrapper-4::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, transparent, var(--theme, #dfa938), transparent) !important;
+    pointer-events: none !important;
+}
+
+.cta-banner-wrapper-4 .section-title h6 {
+    color: var(--theme, #dfa938) !important;
+    letter-spacing: 2px !important;
+    font-weight: 700 !important;
+}
+
+.cta-banner-wrapper-4 .section-title h2 {
+    color: #ffffff !important;
+}
+
+.cta-banner-wrapper-4 .section-title p {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Transparent / Outlined Buttons on Dark Sections */
+.theme-btn.bg-transparent.border-white {
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    color: #ffffff !important;
+}
+
+.theme-btn.bg-transparent.border-white:hover {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    color: #111111 !important;
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.25) !important;
+}
+
+.theme-btn.bg-transparent.border-white:hover i {
+    color: #111111 !important;
 }
 
 
