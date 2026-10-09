@@ -1782,6 +1782,84 @@ body.background-black .service-details-wrapper .main-sidebar .widget-categories 
     padding-left: 16px !important;
 }
 
+/* ===================================================
+   Trusted By India's Leading Organizations - 3D Box Logo Cards
+   =================================================== */
+.brand-section-2 {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    padding: 70px 0 60px 0 !important;
+    position: relative !important;
+    z-index: 5 !important;
+    border-top: 1px solid #edf0f5 !important;
+    border-bottom: 1px solid #edf0f5 !important;
+}
+
+.brand-section-2 .brand-wrapper.style-2 {
+    padding: 0 !important;
+    border: none !important;
+}
+
+.brand-section-2 .swiper {
+    padding: 20px 8px 30px 8px !important;
+    overflow: hidden !important;
+}
+
+/* 3D Box Type Logo Card */
+.brand-card-3d,
+.brand-section-2 .brand-image {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    height: 105px !important;
+    padding: 16px 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 
+        0 10px 24px -4px rgba(16, 24, 40, 0.08),
+        0 4px 10px -2px rgba(16, 24, 40, 0.04),
+        0 2px 4px rgba(0, 0, 0, 0.02),
+        inset 0 1px 0 #ffffff,
+        inset 0 -3px 0 rgba(0, 0, 0, 0.04) !important;
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    cursor: pointer !important;
+    position: relative !important;
+    user-select: none !important;
+    transform: perspective(600px) translateZ(0) !important;
+}
+
+.brand-card-3d:hover,
+.brand-section-2 .brand-image:hover {
+    transform: perspective(600px) translateY(-8px) scale(1.02) !important;
+    border-color: rgba(223, 169, 56, 0.6) !important;
+    box-shadow: 
+        0 22px 35px -5px rgba(223, 169, 56, 0.22),
+        0 10px 20px -3px rgba(0, 0, 0, 0.08),
+        0 0 0 1.5px rgba(223, 169, 56, 0.45),
+        inset 0 1px 0 #ffffff,
+        inset 0 -3px 0 rgba(223, 169, 56, 0.25) !important;
+}
+
+.brand-card-3d img,
+.brand-section-2 .brand-image img {
+    max-height: 52px !important;
+    max-width: 140px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    filter: none !important;
+    opacity: 0.95 !important;
+    transition: all 0.3s ease !important;
+}
+
+.brand-card-3d:hover img,
+.brand-section-2 .brand-image:hover img {
+    opacity: 1 !important;
+    transform: scale(1.06) !important;
+}
+
+
 
 
 
